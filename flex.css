@@ -1,0 +1,9 @@
+body{
+background-color: bisque;
+font-size: 30 px;
+display: flex;
+font-display: auto;
+flex-direction: row;
+justify-content: space;
+gap: ;
+}
