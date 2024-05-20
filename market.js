@@ -1,20 +1,17 @@
 // console.log('Перевірка підключеного файлу скриптів market.js')
 
 let itemsArray = [
-    {
-        firstName: "Віталій",
-        lastName: "Шатківський",
-        subject: "Інформатика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/",
-    },
-    {
-    firstName: "Віталій",
-    lastName: "Шатківський",
-    subject: "Інформатика",
-    photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815-683x1024.jpg",
-    url: "https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/",
-    },
+ {
+    title:
+    image:
+    mono:50
+    pb:30
+    prise_standart:1000
+    prise_discount:2000
+    prise_coupon:3000
+
+ }
+    
 ]
 
 let itemsDiv = document.getElementById("items");
@@ -33,14 +30,12 @@ if(itemsDiv) {
     // itemsDiv.innerHTML = '<h1>Відформатований HTML код</h1>'
     itemsArray.forEach((item, index) => {
         itemsDiv.innerHTML +=
-        `
-        <div class = "item">
-            <h2>Вчитель №${index + 1} 3 ${itemsArray.length}</h2>
-            <p>${item.firstName} ${item.lastName}</p>
-            <p>Предмет: ${item.subject}</p>
-            <p><img src= "${item.photo}" class="item-image"></p>
-            <p><a href = "${item.url}" target="blank" class = "bonus price ">Профіль</a></p>
-        </div>
+        ` <div class = "item">
+        
+        <div class ="item-title"> $(item.title)</div>
+        
+        <!-- Блок товару(малюнок)--!>
+        <div class="item-image">$(item.image)</div>
         `
     })
 } else {
